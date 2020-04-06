@@ -22,7 +22,7 @@ h2 {
 }
 
 .container {
-  top: 150px;
+  top: 120px;
   display: flex;
   border: 10px solid white;
   box-shadow: 2px 2px 4px #000000;
@@ -58,8 +58,8 @@ img {
 }
 
 .column {
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   /* display: inline-block; */
   border: 2px solid #666666;
   background-color: #ccc;
