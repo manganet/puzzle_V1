@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+#columns.background {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+h2 {
+  top: 30px;
+  font-size: 4rem;
+  display: grid;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  z-index: 999;
+}
+
+.container {
+  top: 150px;
+  display: flex;
+  border: 10px solid white;
+  box-shadow: 2px 2px 4px #000000;
+}
+
+.container,
+h2 {
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+}
+
+[draggable] {
+  /* user-select: none; */
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#columns {
+  margin: 0;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(1fr, 2);
+  grid-gap: 0;
+  justify-content: center;
+}
+
+.column {
+  height: 300px;
+  width: 300px;
+  /* display: inline-block; */
+  border: 2px solid #666666;
+  background-color: #ccc;
+  /* margin-right: 5px; */
+  border-radius: 10px;
+  box-shadow: inset 0 0 3px #000;
+  text-align: center;
+  cursor: move;
+}
+
+.column.over,
+.img.over {
+  border: 2px dashed #000;
+}
+
+@media screen and (max-width: 992px) {
+  .column {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 3rem;
+    color: #333;
+  }
+  .container {
+    top: 120px;
+  }
+  .column {
+    height: 170px;
+    width: 170px;
+  }
+  #columns.background {
+    display: none;
+  }
+}
