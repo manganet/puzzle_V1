@@ -84,15 +84,16 @@ img {
 
 @media screen and (max-width: 600px) {
   h2 {
+    top: 15px;
     font-size: 3rem;
     color: #333;
   }
   .container {
-    top: 120px;
+    top: 100px;
   }
   .column {
-    height: 170px;
-    width: 170px;
+    height: 150px;
+    width: 150px;
   }
   #columns.background {
     display: none;
